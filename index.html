@@ -3,109 +3,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atlasforge Interactive — Playable Worlds, Thoughtful Systems</title>
-  <meta name="description" content="Atlasforge Interactive builds cozy, systems-driven games with modern web tech. Explore Octopus In Action, our small-town government sim starring Mayor Octavius." />
-
-  <!-- Favicons -->
-  <link rel="icon" href="ASSET_ROOT_URL/branding/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="ASSET_ROOT_URL/branding/favicon.png" type="image/png" sizes="512x512">
+  <title>Atlasforge Interactive — Home</title>
+  <meta name="description" content="Atlasforge Interactive: cozy, systems-driven games.">
+  <link rel="icon" href="assets/branding/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Atlasforge Interactive" />
-  <meta property="og:description" content="Cozy, systems-driven games. Current title: Octopus In Action." />
-  <meta property="og:site_name" content="Atlasforge Interactive" />
-  <meta property="og:image" content="ASSET_ROOT_URL/press/hero_01.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Atlasforge Interactive" />
-  <meta name="twitter:description" content="Cozy, systems-driven games. Current title: Octopus In Action." />
-  <meta name="twitter:image" content="ASSET_ROOT_URL/press/hero_01.jpg" />
-
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-<body class="theme-dark">
+<body>
   <header class="nav">
-    <a class="brand" href="index.html" aria-label="Atlasforge home">
-      <img class="brand-mark" src="branding/logo.png" alt="Atlasforge Interactive logo" decoding="async" />
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/branding/logo.svg" alt="Atlasforge Interactive logo">
       <span class="brand-text">Atlasforge Interactive</span>
     </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html" aria-current="page">Home</a>
+    <nav class="nav-links">
       <a href="game.html">Octopus In Action</a>
-      <button class="btn ghost" data-theme-toggle type="button" aria-pressed="false">Toggle Theme</button>
+      <a href="#" aria-disabled="true">Press</a>
+      <a href="#" aria-disabled="true">Contact</a>
     </nav>
   </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero container">
-      <div class="hero-left card">
-        <h1 class="h1">We Build Playable Worlds</h1>
-        <p class="lead">
-          Atlasforge Interactive crafts cozy, systems-driven games with crisp UX and approachable depth.
-        </p>
-        <div class="cta-row">
-          <a class="btn" href="game.html">Explore Octopus In Action</a>
-          <a class="btn ghost" target="_blank" rel="noopener" data-repo>GitHub</a>
-        </div>
-        <div class="badges">
-          <span class="tag">Neon-glass UI</span>
-          <span class="tag">Pixel + Modern</span>
-          <span class="tag">HTML5 / JS</span>
-        </div>
-      </div>
-
-      <div class="hero-right card hero-visual">
-        <figure class="hero-figure">
-          <img data-auto-hero alt="Studio showcase hero" loading="eager" width="1200" height="675" />
-          <figcaption class="alpha-pill" aria-label="Alpha badge">Alpha</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Pillars / Tech -->
-    <section class="container grid cols-3">
-      <article class="card">
-        <h2 class="h3">Design Pillars</h2>
-        <ul class="list">
-          <li>Elegant core loops with warmth and humor</li>
-          <li>Readable UI that respects your time</li>
-          <li>Simulation depth without busywork</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h2 class="h3">Technology</h2>
-        <p>Lightweight, framework-free web builds for fast loads and smooth patches.</p>
-        <p class="small">Hard refresh after updates: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></p>
-      </article>
-      <article class="card">
-        <h2 class="h3">Now Playing</h2>
-        <p><strong>Octopus In Action</strong>: a cozy, small-town government sim starring Mayor Octavius.</p>
-        <a class="btn" href="game.html">View Game Page</a>
-      </article>
-    </section>
-
-    <!-- Press Kit -->
-    <section class="container card">
-      <div class="section-head">
-        <h2 class="h3">Press Kit</h2>
-      </div>
-      <p>Logos and key art for coverage. Includes usage notes.</p>
+  <main class="container">
+    <section class="card" style="margin-top:16px">
+      <h1 class="h1">Welcome to Atlasforge Interactive</h1>
+      <p class="lead">We make cozy, simulation-forward games with modern UX and a wink of satire.</p>
       <div class="cta-row">
-        <a class="btn" href="ASSET_ROOT_URL/press/presskit.zip">Download Press Kit (.zip)</a>
-        <a class="btn ghost" href="ASSET_ROOT_URL/branding/" target="_blank" rel="noopener">Branding Folder</a>
+        <a class="btn" href="game.html">Explore: Octopus In Action</a>
       </div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
+      <article class="card">
+        <h2 class="h3">Studio News</h2>
+        <p>Our current title <strong>Octopus In Action</strong> is in active Alpha. Frequent art drops, UI polish, balance tweaks.</p>
+      </article>
+      <article class="card">
+        <h2 class="h3">Follow Our Work</h2>
+        <p class="small">We’ll publish a full press kit and devlog soon. For inquiries: <a href="mailto:hello@atlasforge.example">hello@atlasforge.example</a></p>
+      </article>
     </section>
   </main>
-
   <footer class="container site-footer">
     <div>© <span data-year></span> Atlasforge Interactive, LLC</div>
-    <nav class="footer-links" aria-label="Footer">
+    <nav class="footer-links">
       <a href="#" aria-disabled="true">Privacy</a>
       <a href="#" aria-disabled="true">Terms</a>
-      <a href="mailto:hello@atlasforge.example" aria-label="Email us">Email</a>
+      <a href="mailto:hello@atlasforge.example">Email</a>
     </nav>
   </footer>
 </body>
