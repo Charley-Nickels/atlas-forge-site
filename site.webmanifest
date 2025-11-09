@@ -1,0 +1,12 @@
+{
+  "name": "Atlasforge Interactive",
+  "short_name": "Atlasforge",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0b1620",
+  "theme_color": "#8be0ff",
+  "icons": [
+    { "src": "ASSET_ROOT_URL/branding/favicon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "ASSET_ROOT_URL/branding/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
