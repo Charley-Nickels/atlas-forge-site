@@ -196,5 +196,5 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", async () => {
   const [press, shots, gifs] = await Promise.all([listFolder("press"), listFolder("screenshots"), listFolder("gifs")]);
   const hero = pickHero(press, shots, gifs);
-  document.querySelectorAll("[data-auto-hero]").forEach(img => mountHero(img, hero || withRoot("ASSET_ROOT_URL/branding/logo.svg")));
+  document.querySelectorAll("[data-auto-hero]").forEach(img => mountHero(img, hero || "branding/logo.png"));
 });
