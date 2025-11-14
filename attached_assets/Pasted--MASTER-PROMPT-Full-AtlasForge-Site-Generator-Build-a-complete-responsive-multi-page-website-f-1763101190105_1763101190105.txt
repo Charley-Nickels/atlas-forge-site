@@ -1,0 +1,98 @@
+🧠 MASTER PROMPT — Full AtlasForge Site Generator
+
+Build a complete, responsive multi-page website for a game studio called AtlasForge Interactive. The site includes a homepage and four fully themed subpages. All pages should use modern HTML5, semantic tags, CSS variables, and responsive layouts. Style with Pico.css
+ as a lightweight framework, with optional custom overrides. Each subpage has a distinct tone and content block. Include all internal links and navigation.
+
+🏠 HOMEPAGE — index.html
+
+Title: AtlasForge Interactive
+Purpose: Landing hub with brand identity and links to all subpages
+Navigation:
+
+Octopus in Action
+
+Neighborhood Patrol
+
+SKB
+
+Atlas V
+
+Content Sections:
+
+Hero banner with intro to studio vision
+
+Quick descriptions + links to each game/project
+
+Footer with terms/privacy
+
+🐙 SUBPAGE — octopus.html
+
+Title: Octopus in Action
+Tone: Cozy, colorful, warm sim game
+Content Blocks:
+
+Hero: Game title, description, [Wishlist], [Play Demo], [Follow Devlog] buttons
+
+“Meet Your Mayor”: Sprite art of Mayor Octavius + quote
+
+“Species Spotlight”: Otters, Dolphins, Beavers (icons + traits)
+
+Features grid: Build, Grow Citizens, Resource Management, Small Mysteries
+
+World map preview with pixel layout mockup
+
+Footer
+
+🚓 SUBPAGE — neighborhood.html
+
+Title: Neighborhood Patrol
+Tone: Whimsical chaos, pixel humor, strange lore
+Content Blocks:
+
+Hero: Mini cop in toy car, tagline, trailer + Discord buttons
+
+“Keep the Peace”: Odd crimes, tiny mayhem, local eccentrics, the horse
+
+World map of sandbox layout
+
+Footer
+
+🕶 SUBPAGE — skb.html
+
+Title: SKB
+Tone: Mysterious, minimal, encrypted
+Content:
+
+Black/dark background, centered text
+
+Cryptic statements (“Records begin and end in silence.”)
+
+Single symbol (☍) as visual anchor
+
+No extra content
+
+Footer with “Undisclosed” link
+
+🤖 SUBPAGE — atlasv.html
+
+Title: Atlas V
+Tone: Experimental AI project, sleek and professional
+Content Blocks:
+
+Hero: Atlas V identity and subtitle
+
+Project Description: Intelligent agent and PM tool (in development)
+
+Core Mandates block (monospaced): Organize chaos, non-linear strategy, shared vision
+
+Status note: INTERNAL / NO UI YET
+
+Secure Inquiry footer
+
+📁 FILE STRUCTURE:
+index.html
+octopus.html
+neighborhood.html
+skb.html
+atlasv.html
+/assets/ (optional folder for custom CSS, images, fonts)

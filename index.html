@@ -1,53 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atlasforge Interactive — Home</title>
-  <meta name="description" content="Atlasforge Interactive: cozy, systems-driven games.">
-  <link rel="icon" href="assets/branding/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header class="nav">
-    <a class="brand" href="index.html">
-      <img class="brand-mark" src="assets/branding/logo.svg" alt="Atlasforge Interactive logo">
-      <span class="brand-text">Atlasforge Interactive</span>
-    </a>
-    <nav class="nav-links">
-      <a href="game.html">Octopus In Action</a>
-      <a href="#" aria-disabled="true">Press</a>
-      <a href="#" aria-disabled="true">Contact</a>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="card" style="margin-top:16px">
-      <h1 class="h1">Welcome to Atlasforge Interactive</h1>
-      <p class="lead">We make cozy, simulation-forward games with modern UX and a wink of satire.</p>
-      <div class="cta-row">
-        <a class="btn" href="game.html">Explore: Octopus In Action</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AtlasForge Interactive</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="homepage">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <strong>AtlasForge Interactive</strong>
+        </div>
+        <ul class="nav-links">
+          <li><a href="octopus.html">Octopus in Action</a></li>
+          <li><a href="neighborhood.html">Neighborhood Patrol</a></li>
+          <li><a href="skb.html">SKB</a></li>
+          <li><a href="atlasv.html">Atlas V</a></li>
+        </ul>
       </div>
-    </section>
-    <section class="grid cols-2" style="margin-top:16px">
-      <article class="card">
-        <h2 class="h3">Studio News</h2>
-        <p>Our current title <strong>Octopus In Action</strong> is in active Alpha. Frequent art drops, UI polish, balance tweaks.</p>
-      </article>
-      <article class="card">
-        <h2 class="h3">Follow Our Work</h2>
-        <p class="small">We’ll publish a full press kit and devlog soon. For inquiries: <a href="mailto:hello@atlasforge.example">hello@atlasforge.example</a></p>
-      </article>
-    </section>
-  </main>
-  <footer class="container site-footer">
-    <div>© <span data-year></span> Atlasforge Interactive, LLC</div>
-    <nav class="footer-links">
-      <a href="#" aria-disabled="true">Privacy</a>
-      <a href="#" aria-disabled="true">Terms</a>
-      <a href="mailto:hello@atlasforge.example">Email</a>
     </nav>
-  </footer>
-</body>
+
+    <main>
+      <section class="hero-home">
+        <div class="hero-content-home">
+          <h1 class="studio-title">AtlasForge Interactive</h1>
+          <p class="studio-tagline">Original games, immersive worlds, and creative tools</p>
+          <p class="studio-description">
+            Explore our library of original IP, from cozy chaos in Octopus in Action 
+            to the bizarre law enforcement of Neighborhood Patrol. SKB and Atlas V are 
+            ongoing experimental projects that round out the creative chaos.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-grid">
+        <div class="project-card octopus-card">
+          <img src="attached_assets/ok_1763101141052.PNG" alt="Octopus in Action" class="project-image" />
+          <div class="project-info">
+            <h2>Octopus in Action</h2>
+            <p>A slapstick action platformer where cartoon logic meets pure chaos. Solve wild challenges as a gentlemanly pink octopus with stretchy physics.</p>
+            <a href="octopus.html" class="btn-primary">Explore Game</a>
+          </div>
+        </div>
+
+        <div class="project-card neighborhood-card">
+          <img src="attached_assets/ChatGPT Image Nov 14, 2025, 01_10_15 AM_1763101141051.png" alt="Neighborhood Patrol" class="project-image" />
+          <div class="project-info">
+            <h2>Neighborhood Patrol</h2>
+            <p>Big fun in little cars. Patrol a miniature sandbox world on the hunt for crime, ticketed mischief, and likely topics related to "the horse."</p>
+            <a href="neighborhood.html" class="btn-primary">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card skb-card">
+          <div class="project-info">
+            <h2>SKB</h2>
+            <p class="cryptic">Records begin and end in silence.</p>
+            <a href="skb.html" class="btn-secondary">Enter</a>
+          </div>
+        </div>
+
+        <div class="project-card atlasv-card">
+          <img src="attached_assets/ChatGPT Image Nov 13, 2025, 10_56_30 PM_1763101141050.png" alt="Atlas V" class="project-image atlas-logo" />
+          <div class="project-info">
+            <h2>Atlas V</h2>
+            <p>An experimental AI agent and project management tool designed to organize chaos and enable non-linear strategy.</p>
+            <a href="atlasv.html" class="btn-primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="#">Privacy</a> • <a href="#">Terms</a></p>
+      <p>&copy; 2025 AtlasForge Interactive</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
