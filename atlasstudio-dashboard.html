@@ -1,1 +1,105 @@
-<!DOCTYPE html><html><body><h1>Dashboard Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AtlasStudio Playground — Patch Dashboard Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AtlasStudio Playground is a simulated patch dashboard with scenarios, tabs, toggles, and a fake patch overlay.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+  <main id="mainContent">
+    <div class="dashboard-shell">
+      <header class="top-nav dashboard-nav">
+        <div class="brand">
+          <img src="assets/atlasstudio_logo.png" alt="AtlasStudio logo" class="logo">
+          <div class="brand-text">
+            <div class="name"><span>ATLAS</span><span>STUDIO</span></div>
+            <div class="tagline">Playground / Fake but functional</div>
+          </div>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <nav class="nav-links" id="primaryNav" aria-label="Primary">
+          <a href="atlasstudio.html">Overview</a>
+          <a href="index.html">Atlasforge</a>
+        </nav>
+      </header>
+
+      <section class="dashboard-layout">
+        <aside class="sidebar">
+          <h2 class="sidebar-title">Scenarios</h2>
+          <ul class="scenario-list">
+            <li><button class="scenario-btn active" data-scenario="rpg">RPG crafting patch</button></li>
+            <li><button class="scenario-btn" data-scenario="sheet">KPI spreadsheet</button></li>
+            <li><button class="scenario-btn" data-scenario="policy">Safety SOP</button></li>
+            <li><button class="scenario-btn" data-scenario="pizza">Pizza delivery app</button></li>
+            <li><button class="scenario-btn" data-scenario="restaurant">Restaurant website</button></li>
+            <li><button class="scenario-btn" data-scenario="clipper">Media clipper</button></li>
+          </ul>
+
+          <div class="sidebar-tabs">
+            <button class="tab-btn active" data-tab="brainstorm">Brainstorm</button>
+            <button class="tab-btn" data-tab="uat">UAT</button>
+            <button class="tab-btn" data-tab="review">Review</button>
+            <button class="tab-btn" data-tab="patch">Patch</button>
+          </div>
+        </aside>
+
+        <section class="main-panel" aria-label="Scenario details">
+          <header class="panel-header">
+            <div>
+              <div class="panel-title" id="panelTitle">RPG: Crafting system patch</div>
+              <div class="tagline" id="panelSubtitle">Idea + suggestions + checklist + patch.</div>
+            </div>
+          </header>
+
+          <div class="panel-columns">
+            <section class="subpanel" aria-labelledby="suggestionsHeading">
+              <h2 id="suggestionsHeading" class="subpanel-heading">Suggestions</h2>
+              <div id="suggestionsBody" class="subpanel-body">
+                <!-- script.js will inject scenario + tab specific content here -->
+              </div>
+
+              <div class="subpanel-actions">
+                <button id="patchNowBtn" class="btn btn-primary" type="button">Patch now</button>
+                <button id="keepWorkingBtn" class="btn btn-ghost" type="button">Keep working</button>
+              </div>
+            </section>
+
+            <aside class="preview-panel" aria-label="Patch preview">
+              <div class="preview-header">
+                <span id="previewTitle">Game preview — Version alpha‑v0.1.12</span>
+                <span class="version" id="previewHint">This is a static mock; no builds are run.</span>
+              </div>
+              <div class="preview-image-frame">
+                <img id="previewImage" src="assets/dashboard_mock_1.png" alt="Scenario preview mock">
+              </div>
+              <ul class="preview-status-list" id="previewStatusList">
+                <!-- script.js fills this -->
+              </ul>
+            </aside>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <div class="patch-overlay" id="patchOverlay" aria-hidden="true">
+    <div class="patch-modal" role="dialog" aria-modal="true" aria-labelledby="patchHeading">
+      <h2 id="patchHeading">Simulating patch…</h2>
+      <p>AtlasStudio is faking a patch pipeline. No real files are touched — this is a preview of how the flow will feel.</p>
+      <div class="patch-progress">
+        <div class="patch-bar" id="patchBar"></div>
+      </div>
+      <p class="patch-percent" id="patchPercent">0% — Preparing changes…</p>
+      <button class="btn btn-primary" type="button" id="closePatchBtn">Close overlay</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,1 +1,152 @@
-<!DOCTYPE html><html><body><h1>AtlasStudio Overview</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AtlasStudio — Creative Patch Command Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AtlasStudio is a prototype patch command center that simulates planning, UAT, and patch flows across games, apps, spreadsheets, and more.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+  <main id="mainContent">
+    <div class="shell">
+      <header class="top-nav">
+        <div class="brand">
+          <img src="assets/atlasstudio_logo.png" alt="AtlasStudio logo" class="logo">
+          <div class="brand-text">
+            <div class="name"><span>ATLAS</span><span>STUDIO</span></div>
+            <div class="tagline">Atlas‑V powered creative OS</div>
+          </div>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <nav class="nav-links" id="primaryNav" aria-label="Primary">
+          <a href="index.html">Atlasforge</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#how">How it works</a>
+          <a href="#help">Help</a>
+          <a class="primary-link" href="atlasstudio-dashboard.html">Open Playground</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1 class="hero-title">One workspace where ideas become <span class="accent">patchable systems</span>.</h1>
+          <p class="hero-body">
+            AtlasStudio is a prototype co‑brain for games, apps, spreadsheets, and stories. Describe a change,
+            review AI‑style suggestions, approve what you like, and watch the engine assemble a patch checklist,
+            change log, and UAT plan — all before you ever touch your real project files.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="atlasstudio-dashboard.html">Launch fake dashboard</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+        </div>
+
+        <aside class="hero-preview-card" aria-label="AtlasStudio features">
+          <div class="hero-preview-card-header">
+            <span>What this prototype simulates</span>
+            <span class="pill">Fake, but clickable</span>
+          </div>
+          <div class="preview-grid">
+            <div class="preview-tile">
+              <div class="preview-label">Workflow</div>
+              <div class="preview-name">Idea + Suggestions</div>
+              <div class="preview-footer">
+                <div class="small-row">
+                  <span class="status-dot green"></span>
+                  <span>Yes / No toggles</span>
+                </div>
+                <span class="small-row">Sliders &amp; dependencies</span>
+              </div>
+            </div>
+            <div class="preview-tile">
+              <div class="preview-label">Tabs</div>
+              <div class="preview-name">Brainstorm → Patch</div>
+              <div class="preview-footer">
+                <div class="small-row">
+                  <span class="status-dot orange"></span>
+                  <span>Brainstorm, UAT, Review, Patch</span>
+                </div>
+                <span class="small-row">Each with unique copy</span>
+              </div>
+            </div>
+            <div class="preview-tile">
+              <div class="preview-label">Canon</div>
+              <div class="preview-name">Conflict checks</div>
+              <div class="preview-footer">
+                <div class="small-row">
+                  <span class="status-dot orange"></span>
+                  <span>Flags &amp; dependencies</span>
+                </div>
+                <span>Lore &amp; logic safe</span>
+              </div>
+            </div>
+            <div class="preview-tile">
+              <div class="preview-label">Gallery</div>
+              <div class="preview-name">HUDs &amp; sprites</div>
+              <div class="preview-footer">
+                <div class="small-row">
+                  <span class="status-dot purple"></span>
+                  <span>Static sample media</span>
+                </div>
+                <span>Fake upload button</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="how" class="section-block">
+        <h2 class="section-title">How the playground behaves</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Scenario selector</h3>
+            <p>Switch between an RPG crafting patch, a KPI spreadsheet, a safety policy, a pizza delivery app, a restaurant site, and a media clipper.</p>
+          </article>
+          <article class="card">
+            <h3>Tabs with intent</h3>
+            <p>Brainstorm toggles control the rough idea; UAT lists test steps; Review summarizes risks; Patch brings up a fake loading overlay.</p>
+          </article>
+          <article class="card">
+            <h3>Fake, but honest</h3>
+            <p>Nothing touches your real files. The prototype is deliberately “obviously fake” while still revealing how an Atlas‑V flow could feel.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section-block">
+        <h2 class="section-title">AtlasStudio gallery (mock)</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/dashboard_mock_1.png" alt="Dashboard mock screenshot one">
+            <figcaption>Patch dashboard — RPG scenario.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/dashboard_mock_2.png" alt="Dashboard mock screenshot two">
+            <figcaption>Spreadsheet UAT view.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/mayor_octavius.png" alt="Mayor Octavius sprite">
+            <figcaption>Mayor Octavius — gentleman octopus mayor.</figcaption>
+          </figure>
+        </div>
+        <button class="btn btn-ghost" type="button">Upload media (disabled in prototype)</button>
+      </section>
+
+      <section id="help" class="section-block">
+        <h2 class="section-title">What AtlasStudio is (and isn’t)</h2>
+        <p class="section-body">
+          This is a visual explanation tool, not a SaaS product. You can click through flows, flip toggles, run fake patches,
+          and imagine how the underlying engine would behave. If you’re seeing this on GitHub or Vercel, it’s meant as a
+          portfolio piece and a conversation starter.
+        </p>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
