@@ -1,9 +1,0 @@
-{
-  "name": "Octopus In Action",
-  "short_name": "OIA",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#0b1620",
-  "theme_color": "#7dd3fc",
-  "icons": [{ "src": "assets/branding/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
-}
