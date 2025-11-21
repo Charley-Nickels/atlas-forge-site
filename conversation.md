@@ -1,1 +1,0 @@
-Exporting all site content built via DesignerGPT to Replit for full control and modification. Includes all linked subpages with placeholder images, responsive layout, and dark/light design per page identity.
